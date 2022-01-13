@@ -1,0 +1,196 @@
+create table de7.mshv_students (
+    ID_student char (3),
+    Student VARCHAR2 (50),
+    year_of_birth number(4,0),
+    Phone_number VARCHAR2 (20),
+    ID_group char (3)
+);
+insert into de7.mshv_students (
+    ID_student,
+    Student,
+    year_of_birth,
+    Phone_number,
+    ID_group
+)
+values (
+    'C1',
+    'Иванов И.И.',
+    2000,
+    '(912) 123-4567',
+    'Г1'
+);
+    
+insert into de7.mshv_students (
+    ID_student,
+    Student,
+    year_of_birth,
+    Phone_number,
+    ID_group
+)
+values (
+    'C2',
+    'Петров П.П.',
+    2001,
+    '(912) 765-4321',
+    'Г2'
+);
+    
+insert into de7.mshv_students (
+    ID_student,
+    Student,
+    year_of_birth,
+    Phone_number,
+    ID_group
+)
+values (
+    'C3',
+    'Иванова А.А.',
+    1999,
+    '(902)654-1238',
+    'Г1'
+);
+    
+insert into de7.mshv_students (
+    ID_student,
+    Student,
+    year_of_birth,
+    Phone_number,
+    ID_group
+)
+values (
+    'C4',
+    'Сидоров С.С.',
+    2002,
+    '(900) 159-7513',
+    'Г2'
+);
+    
+insert into de7.mshv_students (
+    ID_student,
+    Student,
+    year_of_birth,
+    Phone_number,
+    ID_group
+)
+values (
+    'C5',
+    'Васечкина Н.Н.',
+    1999,
+    '(922) 123-4698',
+    'Г2'
+);
+    
+insert into de7.mshv_students (
+    ID_student,
+    Student,
+    year_of_birth,
+    Phone_number,
+    ID_group
+)
+values (
+    'C6',
+    'Курочкин В.В.',
+    2001,
+    '(950) 145-6382',
+    'Г1'
+);
+select * from de7.mshv_students;
+
+create table de7.mshv_groups (
+    ID_group char (3),
+    Group_number VARCHAR2 (10),
+    Curator VARCHAR2 (50),
+    ID_faculty char (4)
+);
+
+INSERT INTO de7.mshv_groups (
+    ID_group,
+    Group_number,
+    Curator,
+    ID_faculty
+)
+VALUES (
+    'Г1',
+    '111-М',
+    'Сергеева А.Н.',
+    'М'
+);
+
+INSERT INTO de7.mshv_groups (
+    ID_group,
+    Group_number,
+    Curator,
+    ID_faculty
+)
+VALUES (
+    'Г2',
+    '222-Ф',
+    'Волков В.Н.',
+    'ФТ'
+);
+
+select * from de7.mshv_groups;
+
+create table de7.mshv_facultys (
+    ID_faculty char (4),
+    Faculty varchar (50),
+    Educational_form varchar (20)
+);
+
+INSERT INTO de7.mshv_facultys (
+    ID_faculty,
+    Faculty,
+    Educational_form
+)
+VALUES (
+    'М',
+    'Математический',
+    'Бюджет'
+);
+
+INSERT INTO de7.mshv_facultys (
+    ID_faculty,
+    Faculty,
+    Educational_form
+)
+VALUES (
+    'ФТ',
+    'Физико-технический',
+    'Контракт'
+);
+
+select * from de7.mshv_facultys;
+
+create table de7.mshv_subjects (
+    ID_subject char (2),
+    subject varchar2 (30)
+);
+
+insert into de7.mshv_subjects (
+    ID_subject,
+    subject
+)
+values (
+    'М',
+    'Математика'
+);
+
+insert into de7.mshv_subjects (
+    ID_subject,
+    subject
+)
+values (
+    'Р',
+    'Русский язык'
+);
+
+insert into de7.mshv_subjects (
+    ID_subject,
+    subject
+)
+values (
+    'Ф',
+    'Физика'
+);
+
+select * from de7.mshv_subjects;
